@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import color from "@/app/utils/color";
 
-export default function SubContainer() {
+export default function SubContainer({ teken }: { teken: () => void }) {
   return (
     <View style={styles.subContainer}>
       <Text style={styles.mainText}>
@@ -23,7 +23,7 @@ export default function SubContainer() {
         Aplikasi paling pas buat nyari tukang service terdekat dari kamu yang
         mana mendeliver kamu sebagai tukang service profesional
       </Text>
-      <TouchableOpacity style={styles.tombolHayuk}>
+      <TouchableOpacity style={styles.tombolHayuk} onPress={teken}>
         <Text style={styles.textHayuk}>Hayuk dah buru</Text>
       </TouchableOpacity>
     </View>
