@@ -1,15 +1,17 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "@/app/components/home/Header";
-import Layout from "@/app/components/ui/Layout";
-import ListCategory from "@/app/components/home/ListCategory";
+import Slider from "@/app/components/home/Slider";
+import Categories from "@/app/components/home/Categories";
+import LastBisnis from "@/app/components/home/LastBisnis";
 
 const HomeScreen = () => {
   return (
     <View style={styles.mainContainer}>
       <Header />
-      <ListCategory />
+      <Slider />
+      <Categories />
+      <LastBisnis />
     </View>
   );
 };

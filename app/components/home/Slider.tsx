@@ -3,7 +3,7 @@ import React from "react";
 import { images } from "@/app/utils/images";
 import Layout from "../ui/Layout";
 
-const ListCategory = () => {
+const Slider = () => {
   const emptyComponent = () => {
     return <Text>Tidak ada data</Text>;
   };
@@ -30,13 +30,12 @@ const ListCategory = () => {
   );
 };
 
-export default ListCategory;
+export default Slider;
 
 const styles = StyleSheet.create({
   gambar: {
     width: 270,
     height: 150,
-    // borderRadius: 50,
     objectFit: "contain",
     marginRight: 10,
   },
